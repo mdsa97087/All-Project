@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>findjobs</title>
+      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+      <style>
+            
+            *{
+                  padding: 0;
+                  margin: 0;
+                  list-style: none;
+                  text-decoration: none;
+            }
+
+            .nav{
+            /* background-color:seagreen; */
+            height: 120px;
+            width: 1500px;
+            border: 0px solid rgb(79, 77, 77);
+            margin: auto;
+            margin-top: 20px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        #nav1{
+            float: left;
+            margin-left: 50px;
+            /* display: inline-block; */
+            line-height: 80px;
+            /* margin: 0 5px; */
+            display: flex;
+            gap: 35px;
+            margin-top: 20px;
+            
+        }
+        #nav2{
+            float: right;
+            margin-right: 100px;
+            /* display: inline-block; */
+            line-height: 80px;
+            /* margin: 0 5px; */
+            display: flex;
+            gap: 35px;
+            margin-top: 20px;
+            
+        }
+        a{
+            color: black;
+            font-size: 25px;
+            /* text-transform: uppercase; */
+
+        }
+        a:hover{
+            color: brown;
+            text-decoration: underline;
+        }
+        #logo{
+            height: 80px;
+            width: 120px;
+        }
+        #logo1{
+            height: 80px;
+            width: 80px;
+        }
+
+      </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <div id="nav1">
+                <a href=""><img id="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI66sVKAIDhrlkvjWKXP7UbJTUTr0AHd8gjERWnQIVqkPigRFeWwTW4NAmbxlvvIcdyHM&usqp=CAU
+                            " alt=""></a>
+                <a href=""><img id="logo1" src="https://d3fw5vlhllyvee.cloudfront.net/dist/header/ukraine_support.7ad2b5d444bc427dbc5d.png
+                  " alt=""></a>
+                  <li><a href="#">Find jobs</a></li>
+                  <li><a href="#">Company reviews</a></li>
+                  <li><a href="#">Salary Guide</a></li> 
+                
+
+            </div>
+           <style>
+            #sms{
+                margin-top:3px ;
+                width: 30px;
+                height: 30px;
+            }
+            /* #sms1:hover{
+               
+                text-decoration: underline;
+            } */
+           </style>
+        
+        <div id="nav2">
+            <a id="sms1" href="#"><img id="sms" src="https://img1.pnghut.com/8/23/22/3GPXBTqb7i/text-credit-conversation-symbol-black-and-white.jpg" alt=""></a>
+            <a id="sms1" href="#"><img id="sms" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8AAABQUFD8/Pzz8/P6+voyMjLc3NwkJCQtLS1ZWVnv7+94eHg2NjaPj4/W1taDg4NEREQ/Pz/n5+fFxcWbm5tKSkq9vb0PDw+YmJhubm5VVVXR0dGhoaGtra2zs7MYGBiMjIxjY2NycnJ+fn4XFxclJSXKyspmZma6plArAAAE2klEQVR4nO3dCXbiMBAE0AhM2OKwJmyBAFnvf8IZw/OAQYCNu6sE0/8EqgcIqdWyHx6MMcYYY4wxxhhjjDHGGGP+Q4N5K27GrfmAPRAl9ZlLVerswWhYuH1z9nDkzV3WM3tA0n7coXf2kGRVH48Suog9KFGj44B39lN88iTsswclquFJ6NiDEuULeEc/xKgz9CZcdNrsoQmIRt147M230fx4v+UlXLU+aZ4Ot9P9qbGHepXBJM4Tb2PZ7bCHW9iwlTveVm/BHnIho1zfzgPjeZU97ryG1+TbuI3PsV70+7mv/8Me/mWrEvkS08C/qnXPHqKooD/G9/L5/pqwY5z2KRLQuXWg39RqmSkmKw5yUR71xQI69xXgajUSmGP2jIOLWJX8BBPL0HZWs8tjLugxrA2Hrw5TVosdat9huVfGih1rp64S0LkhO1iqtlRK6EKZbaSWMsfW7Ghbx0cSckbscBuyf/VZ4xBWqDrzaCqA+bSmGjCEyWalnPCJHbB9pqAtg70En2gHdF1uwJr32EwWdzfsO9uVxi2i9gAJm8yAA0BA55jtRfrzTIL5r/8NSbjkBdTaFx56oyV8ASXkdYhVQAlfWQHboIC8lZvm1jeLVbBZwRKy1qZyJzGXzDgBtfe++zj1b8ySbYuzcJM58M2H01CMWZRucQ6+18CEnFMawPb+nwYlITAgp584giZklE070ISM7kx/Z7MWxsoUUWbbYRxCLS4PSxCjpIj8w+f85XehCRn7pw9owg9CQuSijXOij9v/JhgLU/k+r9ASokqJWxVLqOAVmpBRFL7/hIjD0Z2eJVQg3fZ8HuNadP7bhRJiS6hAsyXx2CMh4dWXDK9CaDmpIsulzjXwjaaRWnO31xLf+6XflJgxxhdMkWdrCfxRPqqXJoU/QcSWvBlF7zdwQnxfFLaozyjrY0vejKL3MzghvgVT48bhOfhbCdiCMKMkjC21EQo1EXZr4dw3emGK67xMoRem6GUpftmGPeNOoM+5US3eO+hTYL27v6eg/xCx9eAEutoGD4hu/ELvfxPYyRTZPZvC7i6wrSZb2KkGc6Ura4kMiF+zJZDlNvyKJoFc1aC3v1tTYELsyVqqibtXgq6VpnAVRXQVKgVrUPQ9Qh4CdsSGLnfvoMrCU1pCUMENe9EiC1OswTZ4Z0HmGuTFymOID5H5EUKOLyLs+f0R/eU3Y2e4T31xylqw7Wg/Khp9XHHsSzfgip3PKVcz0If3fooXu/HHMX5qdcUaa09xSK3JDXtL5hylnuhfdq49M42dIm/P5NOSr9mgey8ukb4mJPhWACk90U+xjb1ckU9DcBFex/Z05zUW68gMYyXjI1Tn130Ucjki7QucM4q8ym8XI3T/WlG9kpWbQOeYfctS8w3nnLCoErupUVy5BfH1EUN4qH0etzJOY4wx5g4V633jPZS8hEKL9iBf6XhJkYeBMR6ZUF6RjckLe7DXKZCQ/bqcK+U/ECc9r7u0/IdxNzmTJvL2MP6yB3q1Ws5T/xv9FSbydW5wHkcuJM+d9k/2IMu5/FNE9qeruNQGx3gwqbDzV6R4L8kRVD8zowbzPtySTv0Yn25yR+HV9l2qnTLfpyYvWmSfldmY3/Df/Cm14ctvL36M++vnEf/9qcYYY4wxxhhjjDHGGGOMMXB/AGHOV7JIrtI5AAAAAElFTkSuQmCC" alt=""></a>
+            <a id="sms1" href=""><img  id="sms" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEX///8AAABbW1v29vby8vKxsbFjY2PU1NS9vb2cnJzPz8/c3Nx1dXX5+fn19fVXV1esrKw0NDQ7OzuHh4ceHh5ra2vn5+dERERsbGzDw8OVlZUvLy+8vLwICAjY2Ninp6cpKSl9fX2fn59AQECFhYXlHjJUAAAE+UlEQVR4nO2dC3qqMBCFDeIbBYuoWCv2sf813lJuW60EEkhmkmH+FeR8ATKvHEYjhmEYhmEYhvlhv5ws0igLgiCL0sVkucdekElWSfQsHnmOkhX20gwQTqY14n6ZTkLsJfZhnRwa5VUckjX2QjsyOyrIq8hm2IvtwHyrrK9kO8desCbznZa+kt0Ze9EazOo+ne08+/Ksjpu/nk1Mx9iLV2HSWV/JBHv5razjXgKFiB0/OpY99ZUssUU0cTIgUIgTtgw53T8x90yxhch4MiRQiCdsKbVs9A95ObsNtpxHwheDAoV4cS7lGJsV+CnRtcPf5CNascOWdI+5j8wvTn1uTB0T9zh0aJg56B9x5ug3EarV40gAt7YmUAg3wvC+2UQTMba4kn75YBsO5ItjqwKFwD/47RwUv6AfGTPLAoXALk91q6rpsMUVeLYuUAjcWrH5gPsR1BB8DiAQdxP1ehNdQXwT7X9IK/A+pxmQwgxLoM2Q+x6sADwBU5ggKVRpYZvhgCMwBBMoBE5t0W7adA9OEmU7q7gFJ8MAFCgEhsAVqEKM6Sm4s6IE47yIQBVGCArt5763PCMoBBWI8anZAyuEn0e1V8qvB77ADxnRlMBHNQtghQtwhSmwwhRcIexxiHEgQlUwvoGvZEBmFiXw2QUr9F8h/feQ/reU/nlIP6ahH5fSzy3o54f0c/wB1Gno19ro10vp17zp9y0G0Hui3z+k3wOm38cfwCwG/Xka+jNRA5hroz+bOID5UvozwiCbiOwJYv9NRJ7VH8B9C/p3ZgZw74n+3bUB3D8cwB1S+veA7d3lhu83SSF/H38AngoD8MUYgLcJfX+az1006jHk3A5+Qd0najQAry9TIyjOmLbUQd5zbwC+iSP63pefjLsX+/3wLx3R96At6eIj7J1XMnEv6BLqft4l1D3ZvyDuq/8f2v9G+KH6v8VxGkyP9P5vwTAMwzAMwzAMwzDfhPvVZbnMK5bLy2pPoXoxCld5cYpieV1xG0enYn7xUezqfMp0Cqbb7HT2pmgzK2rrTipco8LxwmmYp/073U9p7uhTm6fX3uq+uaY5tpw/hIn5Ecw4cWYr92+2xtm3bw5UVTeFjZG2G5EF7t+78sCqvIoA7Z0MbY2VPnLCeCUvsCZD2QVYX/4Oqq/kHfJhnZs7+XS4QnXCcxx9Xxoh9nEGc6tSxtZ24Lq3eX1EjdhqFABt8FWPPduvHFvaD3Zexw1E/KJKYCGWg3Yva8P0EOPapQ2sCIzOGUGbs6lhcJgYLsTWw9RHdQ3n0qLLwciTCut4pYuBEqQ7h2A9vY9GaBNPfXpew3zFXr8Cr30EQtshd6PHJSL3jvl6Ot9px8+UVOko0ZcdLAm6CIQ27O5HB7OsD+w1a/KhK7DAXrE2hZ5AN5OJZrRSDWijZzPolKggLLzMo+FRoH5hyS2OqgIhfkVth7OawA32OnugVoLzJ1h7RCl8g/FCtIVKewp7jT1pF+hGa6I7rfU3SINnO7S1/KF/kGOelqKG/1vYtom+5Ux1NL+J2KszQpNA11po3WhqvMFPydjgXS7Qz7TwEXmi6F/poh55QcPnmPsWefyNvTJjyAS63SnUQdZV9De3/4ss13e1Xa+PzPHtFXthxpBF3350C1WQdRR9ajY1I2tFsUJ/YIX+wwr9hxX6z3AVUkmA5SnwRxzQINYePWEYhmEYhmGQ+Qcj+XTuErG8jgAAAABJRU5ErkJggg==" alt=""></a>
+            <li><a href="#">Employers / Post Job</a></li>
+        </div>
+        
+        </ul>
+       
+    </div>
+      <form>
+       
+            <div class="all">
+     <div class="find">
+        <h3>What</h3>
+     <input placeholder="Job title,Keywords or company" type="search" name="what" id="job">
+     </div>
+     <div class="where">
+         <h3>Where</h3>
+         <input placeholder="City, state,or Pin code" type="location" name="Location" id="location">
+     </div>
+     
+     <input id="submit" type="submit" value="Find Jobs">
+     </div> 
+      </form>
+      <style>
+            .find{
+    display: flex;
+    width: 400px;
+    /* height: 50px; */
+    border: 1px solid ;
+    border-radius: 20px;
+    margin: auto;
+}
+.where{
+    display: flex;
+    width: 400px;
+    /* height: 50px; */
+    border: 1px solid ;
+    border-radius: 20px;
+    margin: auto;
+}
+.all{
+    width: 1000px;
+    height: 50px;
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+    /* margin-left: 250px; */
+    gap: 30px;
+    border: 0px solid red;
+    margin-bottom: 25px;
+}
+h3{
+    margin: 12.5px 10px;
+}
+input{
+    width: 300px;
+    border-radius: 20px;
+    border:0;
+    /* border-style:none; */
+    /* list-style: none; */
+    font-size: 20px;
+
+}
+#submit{
+    width: 150px;
+    background-color: rgb(39, 39, 173);
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: 400;
+    border-radius: 20px;
+    border: 0;
+    padding: 5px;
+}
+#submit:hover{
+transform: scale(1.05);
+}
+      </style>
+
+<div id="emp">
+      <a id="empa" style="color: blue;" href="">Employers: Post a job</a>
+      <h3 style="">– Your next hire is here</h3>
+  </div>
+  <style>
+      #emp{
+    border: 0px solid salmon;
+    width:500px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 25px;
+}
+      #empa:hover{
+            /* text-decoration: none; */
+            text-decoration: underline;
+
+      }
+      #empa{
+            margin-top: 10px;
+            font-size: 25px;
+            font-weight: 600;
+      }
+      
+
+  </style>
+  <div class="jobfeed">
+       <a  href=""><div class="job">Job feed</div></a>
+       <a href=""><div class="job">Recent searches</div></a>
+  <style>
+    .jobfeed{
+        width: 1000px;
+        height: 100px;
+        border: 0px solid red;
+        display: flex;
+        margin: auto;
+    }
+    .job{
+        border: 0px solid blue;
+        width: 400px;
+        font-size: 40px;
+        padding: 20px;
+        text-align: center;
+    }
+
+  </style>
+  
+    </div>
+    <div class="bigdivbig">
+    <div class="bigdiv">
+        <div class="div1">
+    <p>new</p>
+    <h1>Electronics Engineer</h1>
+    <h3>GVR Technolabs Pvt Ltd</h3>
+    <h3>Patna, Bihar</h3>
+    <thead>
+        
+        <tr> <span>&#8377</span> 16,000- 18,000 a month </tr>
+        <tr>full-time</tr>
+        <tr><span>&#128337</span> Day shift</tr>
+    </thead>
+    <br>
+    <tbody>
+    <th><span>&#10148</span> Apply with your Indeed Resume</th>
+    <th><span>&#128337</span>  Urgently hiring</th>
+    <th>Hiring multiple candidates</th>
+    </tbody>
+    <ul>
+        <li>Experience*: 6months to 2 years</li>
+    <li>Should be Experienced in RF MW and Analog circuts</li>
+        <li>Usage of test instructions such as Digital Multimeter, Signal generator and spectrum Analyzer</li>
+<li>Posted 3 days ago. From Electrical Engineer,Fresher </li>
+</ul>
+        </div>
+        <div class="div1">
+            <p>new</p>
+            <h1>Electronics Engineer</h1>
+            <h3>GVR Technolabs Pvt Ltd</h3>
+            <h3>Patna, Bihar</h3>
+            <thead>
+                
+                <tr> &#8377 16,000- 18,000 a month </tr>
+                <tr>full-time</tr>
+                <tr>&#128337 Day shift</tr>
+            </thead>
+            <br>
+            <tbody>
+            <th>&#10148 Apply with your Indeed Resume</th>
+            <th> &#128337 Urgently hiring</th>
+            <th>Hiring multiple candidates</th>
+            </tbody>
+            <ul>
+                <li>Experience*: 6months to 2 years</li>
+            <li>Should be Experienced in RF MW and Analog circuts</li>
+                <li>Usage of test instructions such as Digital Multimeter, Signal generator and spectrum Analyzer</li>
+        <li>Posted 3 days ago. From Electrical Engineer,Fresher </li>
+        </ul>
+                </div>
+                <div class="div1">
+                    <p>new</p>
+                    <h1>Electronics Engineer</h1>
+                    <h3>GVR Technolabs Pvt Ltd</h3>
+                    <h3>Patna, Bihar</h3>
+                    <thead>
+                        
+                        <tr> &#8377 16,000- 18,000 a month </tr>
+                        <tr>full-time</tr>
+                        <tr>&#128337 Day shift</tr>
+                    </thead>
+                    <br>
+                    <tbody>
+                    <th>&#10148 Apply with your Indeed Resume</th>
+                    <th> &#128337 Urgently hiring</th>
+                    <th>Hiring multiple candidates</th>
+                    </tbody>
+                    <ul>
+                        <li>Experience*: 6months to 2 years</li>
+                    <li>Should be Experienced in RF MW and Analog circuts</li>
+                        <li>Usage of test instructions such as Digital Multimeter, Signal generator and spectrum Analyzer</li>
+                <li>Posted 3 days ago. From Electrical Engineer,Fresher </li>
+                </ul>
+                        </div>
+                        <div class="div1">
+                            <p>new</p>
+                            <h1>Electronics Engineer</h1>
+                            <h3>GVR Technolabs Pvt Ltd</h3>
+                            <h3>Patna, Bihar</h3>
+                            <thead>
+                                
+                                <tr> &#8377 16,000- 18,000 a month </tr>
+                                <tr>full-time</tr>
+                                <tr>&#128337 Day shift</tr>
+                            </thead>
+                            <br>
+                            <tbody>
+                            <th>&#10148 Apply with your Indeed Resume</th>
+                            <th> &#128337 Urgently hiring</th>
+                            <th>Hiring multiple candidates</th>
+                            </tbody>
+                            <ul>
+                                <li>Experience*: 6months to 2 years</li>
+                            <li>Should be Experienced in RF MW and Analog circuts</li>
+                                <li>Usage of test instructions such as Digital Multimeter, Signal generator and spectrum Analyzer</li>
+                        <li>Posted 3 days ago. From Electrical Engineer,Fresher </li>
+                        </ul>
+                                </div>
+                                <div class="div1">
+                                    <p>new</p>
+                                    <h1>Electronics Engineer</h1>
+                                    <h3>GVR Technolabs Pvt Ltd</h3>
+                                    <h3>Patna, Bihar</h3>
+                                    <thead>
+                                        
+                                        <tr> &#8377 16,000- 18,000 a month </tr>
+                                        <tr>full-time</tr>
+                                        <tr>&#128337 Day shift</tr>
+                                    </thead>
+                                    <br>
+                                    <tbody>
+                                    <th>&#10148 Apply with your Indeed Resume</th>
+                                    <th> &#128337 Urgently hiring</th>
+                                    <th>Hiring multiple candidates</th>
+                                    </tbody>
+                                    <ul>
+                                        <li>Experience*: 6months to 2 years</li>
+                                    <li>Should be Experienced in RF MW and Analog circuts</li>
+                                        <li>Usage of test instructions such as Digital Multimeter, Signal generator and spectrum Analyzer</li>
+                                <li>Posted 3 days ago. From Electrical Engineer,Fresher </li>
+                                </ul>
+                                        </div>
+                                        <div class="div1">
+                                            <p>new</p>
+                                            <h1>Electronics Engineer</h1>
+                                            <h3>GVR Technolabs Pvt Ltd</h3>
+                                            <h3>Patna, Bihar</h3>
+                                            <thead>
+                                                
+                                                <tr> &#8377 16,000- 18,000 a month </tr>
+                                                <tr>full-time</tr>
+                                                <tr>&#128337 Day shift</tr>
+                                            </thead>
+                                            <br>
+                                            <tbody>
+                                            <th>&#10148 Apply with your Indeed Resume</th>
+                                            <th> &#128337 Urgently hiring</th>
+                                            <th>Hiring multiple candidates</th>
+                                            </tbody>
+                                            <ul>
+                                                <li>Experience*: 6months to 2 years</li>
+                                            <li>Should be Experienced in RF MW and Analog circuts</li>
+                                                <li>Usage of test instructions such as Digital Multimeter, Signal generator and spectrum Analyzer</li>
+                                        <li>Posted 3 days ago. From Electrical Engineer,Fresher </li>
+                                        </ul>
+                                                </div>
+                                                <div class="div1">
+                                                    <p>new</p>
+                                                    <h1>Electronics Engineer</h1>
+                                                    <h3>GVR Technolabs Pvt Ltd</h3>
+                                                    <h3>Patna, Bihar</h3>
+                                                    <thead>
+                                                        
+                                                        <tr> &#8377 16,000- 18,000 a month </tr>
+                                                        <tr>full-time</tr>
+                                                        <tr>&#128337 Day shift</tr>
+                                                    </thead>
+                                                    <br>
+                                                    <tbody>
+                                                    <th>&#10148 Apply with your Indeed Resume</th>
+                                                    <th> &#128337 Urgently hiring</th>
+                                                    <th>Hiring multiple candidates</th>
+                                                    </tbody>
+                                                    <ul>
+                                                        <li>Experience*: 6months to 2 years</li>
+                                                    <li>Should be Experienced in RF MW and Analog circuts</li>
+                                                        <li>Usage of test instructions such as Digital Multimeter, Signal generator and spectrum Analyzer</li>
+                                                <li>Posted 3 days ago. From Electrical Engineer,Fresher </li>
+                                                </ul>
+                                                        </div>
+                                                        <div class="div1">
+                                                            <p>new</p>
+                                                            <h1>Electronics Engineer</h1>
+                                                            <h3>GVR Technolabs Pvt Ltd</h3>
+                                                            <h3>Patna, Bihar</h3>
+                                                            <thead>
+                                                                
+                                                                <tr> &#8377 16,000- 18,000 a month </tr>
+                                                                <tr>full-time</tr>
+                                                                <tr>&#128337 Day shift</tr>
+                                                            </thead>
+                                                            <br>
+                                                            <tbody>
+                                                            <th>&#10148 Apply with your Indeed Resume</th>
+                                                            <th> &#128337 Urgently hiring</th>
+                                                            <th>Hiring multiple candidates</th>
+                                                            </tbody>
+                                                            <ul>
+                                                                <li>Experience*: 6months to 2 years</li>
+                                                            <li>Should be Experienced in RF MW and Analog circuts</li>
+                                                                <li>Usage of test instructions such as Digital Multimeter, Signal generator and spectrum Analyzer</li>
+                                                        <li>Posted 3 days ago. From Electrical Engineer,Fresher </li>
+                                                        </ul>
+                                                                </div>
+                                                                                                                                                                                                                                        
+
+    </div> 
+    <div class="bigdiv1">
+        <div class="div2">
+    <p>new</p>
+    <h1>IT Engineer</h1>
+    <h3>GVR Technolabs Pvt Ltd</h3>
+    <h3>Patna, Bihar</h3>
+    <thead>
+        
+        <tr> &#8377 16,000- 18,000 a month </tr>
+        <tr>full-time</tr>
+        <tr>&#128337 Day shift</tr>
+    </thead>
+    <br>
+    <tbody>
+    <th>&#10148 Apply with your Indeed Resume</th>
+    <th> &#128337 Urgently hiring</th>
+    <th>Hiring multiple candidates</th>
+    </tbody>
+    <ul>
+        <li>Experience*: 6months to 2 years</li>
+    <li>Should be Experienced in RF MW and Analog circuts</li>
+        <li>Usage of test instructions such as Digital Multimeter, Signal generator and spectrum Analyzer</li>
+<li>Posted 3 days ago. From Electrical Engineer,Fresher </li>
+</ul>
+        </div>
+        <div class="div2">
+            <p>new</p>
+            <h1>IT Engineer</h1>
+            <h3>GVR Technolabs Pvt Ltd</h3>
+            <h3>Patna, Bihar</h3>
+            <thead>
+                
+                <tr> &#8377 16,000- 18,000 a month </tr>
+                <tr>full-time</tr>
+                <tr>&#128337 Day shift</tr>
+            </thead>
+            <br>
+            <tbody>
+            <th>&#10148 Apply with your Indeed Resume</th>
+            <th> &#128337 Urgently hiring</th>
+            <th>Hiring multiple candidates</th>
+            </tbody>
+            <ul>
+                <li>Experience*: 6months to 2 years</li>
+            <li>Should be Experienced in RF MW and Analog circuts</li>
+                <li>Usage of test instructions such as Digital Multimeter, Signal generator and spectrum Analyzer</li>
+        <li>Posted 3 days ago. From Electrical Engineer,Fresher </li>
+        </ul>
+                </div>
+                <div class="div2">
+                    <p>new</p>
+                    <h1>IT Engineer</h1>
+                    <h3>GVR Technolabs Pvt Ltd</h3>
+                    <h3>Patna, Bihar</h3>
+                    <thead>
+                        
+                        <tr> &#8377 16,000- 18,000 a month </tr>
+                        <tr>full-time</tr>
+                        <tr>&#128337 Day shift</tr>
+                    </thead>
+                    <br>
+                    <tbody>
+                    <th>&#10148 Apply with your Indeed Resume</th>
+                    <th> &#128337 Urgently hiring</th>
+                    <th>Hiring multiple candidates</th>
+                    </tbody>
+                    <ul>
+                        <li>Experience*: 6months to 2 years</li>
+                    <li>Should be Experienced in RF MW and Analog circuts</li>
+                        <li>Usage of test instructions such as Digital Multimeter, Signal generator and spectrum Analyzer</li>
+                <li>Posted 3 days ago. From Electrical Engineer,Fresher </li>
+                </ul>
+                        </div>
+                        <div class="div2">
+                            <p>new</p>
+                            <h1>Electronics Engineer</h1>
+                            <h3>GVR Technolabs Pvt Ltd</h3>
+                            <h3>Patna, Bihar</h3>
+                            <thead>
+                                
+                                <tr> &#8377 16,000- 18,000 a month </tr>
+                                <tr>full-time</tr>
+                                <tr>&#128337 Day shift</tr>
+                            </thead>
+                            <br>
+                            <tbody>
+                            <th>&#10148 Apply with your Indeed Resume</th>
+                            <th> &#128337 Urgently hiring</th>
+                            <th>Hiring multiple candidates</th>
+                            </tbody>
+                            <ul>
+                                <li>Experience*: 6months to 2 years</li>
+                            <li>Should be Experienced in RF MW and Analog circuts</li>
+                                <li>Usage of test instructions such as Digital Multimeter, Signal generator and spectrum Analyzer</li>
+                        <li>Posted 3 days ago. From Electrical Engineer,Fresher </li>
+                        </ul>
+                                </div>
+                                <div class="div2">
+                                    <p>new</p>
+                                    <h1>Electronics Engineer</h1>
+                                    <h3>GVR Technolabs Pvt Ltd</h3>
+                                    <h3>Patna, Bihar</h3>
+                                    <thead>
+                                        
+                                        <tr> &#8377 16,000- 18,000 a month </tr>
+                                        <tr>full-time</tr>
+                                        <tr>&#128337 Day shift</tr>
+                                    </thead>
+                                    <br>
+                                    <tbody>
+                                    <th>&#10148 Apply with your Indeed Resume</th>
+                                    <th> &#128337 Urgently hiring</th>
+                                    <th>Hiring multiple candidates</th>
+                                    </tbody>
+                                    <ul>
+                                        <li>Experience*: 6months to 2 years</li>
+                                    <li>Should be Experienced in RF MW and Analog circuts</li>
+                                        <li>Usage of test instructions such as Digital Multimeter, Signal generator and spectrum Analyzer</li>
+                                <li>Posted 3 days ago. From Electrical Engineer,Fresher </li>
+                                </ul>
+                                        </div>
+                                        <div class="div2">
+                                            <p>new</p>
+                                            <h1>Electronics Engineer</h1>
+                                            <h3>GVR Technolabs Pvt Ltd</h3>
+                                            <h3>Patna, Bihar</h3>
+                                            <thead>
+                                                
+                                                <tr> &#8377 16,000- 18,000 a month </tr>
+                                                <tr>full-time</tr>
+                                                <tr>&#128337 Day shift</tr>
+                                            </thead>
+                                            <br>
+                                            <tbody>
+                                            <th>&#10148 Apply with your Indeed Resume</th>
+                                            <th> &#128337 Urgently hiring</th>
+                                            <th>Hiring multiple candidates</th>
+                                            </tbody>
+                                            <ul>
+                                                <li>Experience*: 6months to 2 years</li>
+                                            <li>Should be Experienced in RF MW and Analog circuts</li>
+                                                <li>Usage of test instructions such as Digital Multimeter, Signal generator and spectrum Analyzer</li>
+                                        <li>Posted 3 days ago. From Electrical Engineer,Fresher </li>
+                                        </ul>
+                                                </div>
+                                                <div class="div2">
+                                                    <p>new</p>
+                                                    <h1>Electronics Engineer</h1>
+                                                    <h3>GVR Technolabs Pvt Ltd</h3>
+                                                    <h3>Patna, Bihar</h3>
+                                                    <thead>
+                                                        
+                                                        <tr> &#8377 16,000- 18,000 a month </tr>
+                                                        <tr>full-time</tr>
+                                                        <tr>&#128337 Day shift</tr>
+                                                    </thead>
+                                                    <br>
+                                                    <tbody>
+                                                    <th>&#10148 Apply with your Indeed Resume</th>
+                                                    <th> &#128337 Urgently hiring</th>
+                                                    <th>Hiring multiple candidates</th>
+                                                    </tbody>
+                                                    <ul>
+                                                        <li>Experience*: 6months to 2 years</li>
+                                                    <li>Should be Experienced in RF MW and Analog circuts</li>
+                                                        <li>Usage of test instructions such as Digital Multimeter, Signal generator and spectrum Analyzer</li>
+                                                <li>Posted 3 days ago. From Electrical Engineer,Fresher </li>
+                                                </ul>
+                                                        </div>
+                                                        <div class="div2">
+                                                            <p>new</p>
+                                                            <h1>Electronics Engineer</h1>
+                                                            <h3>GVR Technolabs Pvt Ltd</h3>
+                                                            <h3>Patna, Bihar</h3>
+                                                            <thead>
+                                                                
+                                                                <tr> &#8377 16,000- 18,000 a month </tr>
+                                                                <tr>full-time</tr>
+                                                                <tr>&#128337 Day shift</tr>
+                                                            </thead>
+                                                            <br>
+                                                            <tbody>
+                                                            <th>&#10148 Apply with your Indeed Resume</th>
+                                                            <th> &#128337 Urgently hiring</th>
+                                                            <th>Hiring multiple candidates</th>
+                                                            </tbody>
+                                                            <ul>
+                                                                <li>Experience*: 6months to 2 years</li>
+                                                            <li>Should be Experienced in RF MW and Analog circuts</li>
+                                                                <li>Usage of test instructions such as Digital Multimeter, Signal generator and spectrum Analyzer</li>
+                                                        <li>Posted 3 days ago. From Electrical Engineer,Fresher </li>
+                                                        </ul>
+                                                                </div>
+                                                                                                                                                                                                                                        
+
+    </div> -->
+</div>
+    <style>
+        .bigdivbig{
+            width: 1200px;
+            height: auto;
+            border: 0px solid green;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+        /* overflow-y: auto;
+            scroll-behavior: smooth; */
+            
+        
+        }
+      .bigdiv{
+            width: 550px;
+            height: auto;
+            border: 0px solid red;
+            overflow-y: auto;
+            scroll-behavior: smooth;
+          
+        }
+        .bigdiv1{
+            width: 550px;
+            height: auto;
+            border: 0px solid red;
+          
+        }
+        .div1{
+            border: 1px solid blue;
+            margin: 20px 0 10px 0px;
+            padding: 10px;
+            font-size: 18px;
+            font-style: initial;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+           
+        }
+        .div2{
+            border: 1px solid blue;
+            margin: 20px 0 10px 0px;
+            padding: 10px;
+            font-size: 18px;
+            font-style: initial;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            
+        }
+        
+        span{
+            background-color: rgb(57, 57, 162);
+            color: aliceblue;
+        }
+    </style>
+
+  
+</body>
+</html>

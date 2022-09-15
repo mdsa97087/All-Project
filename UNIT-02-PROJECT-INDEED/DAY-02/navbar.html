@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration:none;
+            list-style: none;
+            box-sizing: border-box;
+            /* width: 100%; */
+        }
+        .nav{
+            /* background-color:seagreen; */
+            height: 120px;
+            width: 1500px;
+            border: 0px solid rgb(79, 77, 77);
+            margin: auto;
+            margin-top: 20px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        #nav1{
+            float: left;
+            margin-left: 50px;
+            /* display: inline-block; */
+            line-height: 80px;
+            /* margin: 0 5px; */
+            display: flex;
+            gap: 35px;
+            margin-top: 20px;
+            
+        }
+        #nav2{
+            float: right;
+            margin-right: 100px;
+            /* display: inline-block; */
+            line-height: 80px;
+            /* margin: 0 5px; */
+            display: flex;
+            gap: 35px;
+            margin-top: 20px;
+            
+        }
+        a{
+            color: black;
+            font-size: 25px;
+            /* text-transform: uppercase; */
+
+        }
+        a:hover{
+            color: brown;
+            text-decoration: underline;
+        }
+        #logo{
+            height: 80px;
+            width: 120px;
+        }
+        #logo1{
+            height: 80px;
+            width: 80px;
+        }
+.find{
+    display: flex;
+    width: 400px;
+    /* height: 50px; */
+    border: 1px solid ;
+    border-radius: 20px;
+    margin: auto;
+}
+.where{
+    display: flex;
+    width: 400px;
+    /* height: 50px; */
+    border: 1px solid ;
+    border-radius: 20px;
+    margin: auto;
+}
+.all{
+    width: 1000px;
+    height: 50px;
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+    /* margin-left: 250px; */
+    gap: 30px;
+    border: 0px solid red;
+    margin-bottom: 25px;
+}
+h3{
+    margin: 12.5px 10px;
+}
+input{
+    width: 300px;
+    border-radius: 20px;
+    border:0;
+    /* border-style:none; */
+    /* list-style: none; */
+    font-size: 20px;
+
+}
+#submit{
+    width: 150px;
+    background-color: rgb(39, 39, 173);
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: 400;
+    border-radius: 20px;
+    border: 0;
+    padding: 5px;
+}
+#submit:hover{
+transform: scale(1.05);
+}
+#post{
+    border: 0px solid salmon;
+    width:500px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 25px;
+  
+   
+}
+
+#emp{
+    border: 0px solid salmon;
+    width:500px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+
+    </style> 
+           
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <div id="nav1">
+                <a href=""><img id="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI66sVKAIDhrlkvjWKXP7UbJTUTr0AHd8gjERWnQIVqkPigRFeWwTW4NAmbxlvvIcdyHM&usqp=CAU
+                            " alt=""></a>
+                <a href=""><img id="logo1" src="https://d3fw5vlhllyvee.cloudfront.net/dist/header/ukraine_support.7ad2b5d444bc427dbc5d.png
+                  " alt=""></a>
+                  <li><a href="findjob.html">Find jobs</a></li>
+                  <li><a href="#">Company reviews</a></li>
+                  <li><a href="#">Salary Guide</a></li> 
+                
+
+            </div>
+           
+        
+        <div id="nav2">
+            <li><a href="#">Post your resume</a></li>
+            <li><a style="color:blue" href="SignIn.html">Sign in</a></li>
+            <li><a href="#">Employers / Post Job</a></li>
+        </div>
+        
+        </ul>
+       
+    </div>
+    
+    
+    <form>
+       
+       <div class="all">
+<div class="find">
+   <h3>What</h3>
+<input placeholder="Job title,Keywords or company" type="search" name="what" id="job">
+</div>
+<div class="where">
+    <h3>Where</h3>
+    <input placeholder="City, state,or Pin code" type="location" name="Location" id="location">
+</div>
+
+<input id="submit" type="submit" value="Find Jobs">
+</div> 
+    </form>
+    <div id="post">
+        <a style="color: blue;" href="">Post your resume</a>
+        <h2>– It only takes a few seconds</h2>
+    </div>
+    <div id="emp">
+        <a style="color: blue;" href="">Employers: Post a job</a>
+        <h2>– Your next hire is here</h2>
+    </div>
+   <h1 style="text-align:center;margin-top:80px ;">Popular searches</h1>
+
+   <div id="bigbox">
+    <a class="govsearch" href="https://www.indgovtjobs.in/2015/10/Government-Jobs.html">
+<span class="serchbox">
+    <img id="search" src="https://icon-library.com/images/find-icon/find-icon-10.jpg" alt="">
+
+</span>
+<span class="goverment">Government</span>
+
+    </a>
+    <a class="govsearch" href="">
+        <span class="serchbox">
+            <img id="search" src="https://icon-library.com/images/find-icon/find-icon-10.jpg" alt="">
+        </span>
+        <span class="goverment"> Online Typing</span>
+        
+    </a>
+    <a class="govsearch" href="">
+        <span class="serchbox">
+            <img id="search" src="https://icon-library.com/images/find-icon/find-icon-10.jpg" alt="">
+        </span>
+        <span class="goverment">  Work From Home</span>
+        
+    </a>
+    <a class="govsearch" href="">
+        <span class="serchbox">
+            <img id="search" src="https://icon-library.com/images/find-icon/find-icon-10.jpg" alt="">
+        </span>
+        <span class="goverment">  Bank</span>
+        
+    </a>
+    <a class="govsearch" href="">
+        <span class="serchbox">
+            <img id="search" src="https://icon-library.com/images/find-icon/find-icon-10.jpg" alt="">
+        </span>
+        <span class="goverment">  Healthcare</span>
+        
+    </a>
+    <a class="govsearch" href="">
+        <span class="serchbox">
+            <img id="search" src="https://icon-library.com/images/find-icon/find-icon-10.jpg" alt="">
+        </span>
+        <span class="goverment">  Online Tutoring</span>
+        
+    </a>
+    <a class="govsearch" href="">
+        <span class="serchbox">
+            <img id="search" src="https://icon-library.com/images/find-icon/find-icon-10.jpg" alt="">
+        </span>
+        <span class="goverment">  Police</span>
+        
+    </a>
+    <a class="govsearch" href="">
+        <span class="serchbox">
+            <img id="search" src="https://icon-library.com/images/find-icon/find-icon-10.jpg" alt="">
+        </span>
+        <span class="goverment"> Delivery Executive</span>
+        
+    </a>
+    <a class="govsearch" href="">
+        <span class="serchbox">
+            <img id="search" src="https://icon-library.com/images/find-icon/find-icon-10.jpg" alt="">
+        </span>
+        <span class="goverment">  Nursing</span>
+        
+    </a>
+    <a class="govsearch" href="">
+        <span class="serchbox">
+            <img id="search" src="https://icon-library.com/images/find-icon/find-icon-10.jpg" alt="">
+        </span>
+        <span class="goverment">NGO</span>
+        
+    </a>
+   
+   
+</div> 
+<style>
+    #bigbox{
+        border: 0px solid blue;
+        width: 1000px;
+        /* align-items: center; */
+        margin: auto;
+       margin-top: 25px;
+       display: grid;
+       grid-template-columns: repeat(5,0.5fr);
+
+    }
+    #search{
+        width: 15px;
+        height: 15px;
+    }
+    .govsearch{
+        width: 150px;
+        border-radius: 4px;
+        background-color: #ececec;
+        color: #2d2d2d;
+        min-height: 40px;
+        border: 0;
+        display: inline-flex; 
+        align-items:center;
+        border: 0px solid red;
+        
+         display: flex;
+         justify-content: center;
+         margin: auto;
+         margin-bottom: 10px;
+    }
+    .govsearch:hover{
+        text-decoration: none;
+        color: #2d2d2d;
+        transform: scale(1.05);
+
+    }
+    .goverment{
+        font-size: 16px;
+    }
+    /* a:nth-child(6){
+        margin-left: 100px;
+    } */
+    p{
+        text-align: center;
+        margin: 100px 0 50px 0;
+        font-size: 25px;
+    }
+    #hindi{
+        color: blue;
+    }
+</style>
+<p>Indeed <span id="hindi">हिंदी</span> में भी ऑफ़र करता है</p>
+<hr>
+<div id="at">
+    <a href="#">Career Advice</a>
+    <a href="#">Browse Jobs</a>
+    <a href="#">Browse Companies</a>
+    <a href="#">Salaries</a>
+    <a href="#">Indeed Events</a>
+    <a href="#">Work at Indeed</a>
+    <a href="#">Countries </a>
+    <a href="#">About</a>
+    <a href="#">Help Center</a>
+  </div>
+  <div id="at1">
+    <a href="#">©2022 Indeed</a>
+    <a href="#">Accessibility at Indeed</a>
+    <a href="#">Privacy Center </a>
+    <a href="#">Cookies</a>
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+  </div>
+  
+      <style>
+        
+        #at{
+            margin-top: 5px;
+        width: 1500px;
+        }
+      #at1 {
+        margin-top: 20px;
+        width: 1500px;
+      }
+        #at>a,
+      #at1>a{
+        margin-left: 25px;
+        color: black;
+        list-style: none;
+        text-decoration: none;
+      }
+      #at>a:hover,#at1>a:hover {
+        text-decoration: underline;
+      } 
+
+
+      </style>
+ <h1 class="employers_find">Let employers find you</h1>
+ <style>
+    .employers_find{
+        text-align: center;
+        margin-top: 20px;
+    }
+ </style>
+ <a class="resume" href="">
+        <div class="upload_resume">  Upload Your resume</div>
+    </a>
+        <style>
+        .upload_resume{
+            border: 0px solid red;
+            padding: 15px;
+            width: 220px;
+            font-size: 20px;
+            font-weight: 600;
+          
+            display: flex;
+           align-items: center;
+          
+           background-color: blue;
+           color: #ececec;
+           border: 0;
+           border-radius: 10px;
+           margin: auto;
+           margin-top: 20px;
+           margin-bottom: 100px;
+        }
+        .upload_resume:hover{
+            
+        /* color: #2d2d2d; */
+        transform: scale(1.05);
+        }
+        .resume:hover{
+            text-decoration: none;
+        }
+        </style>
+     
+ 
+</body>
+</html>

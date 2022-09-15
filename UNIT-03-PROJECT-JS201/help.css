@@ -1,0 +1,158 @@
+body{
+    font-family: sans-serif;
+}
+
+
+
+  #navbar>img{
+    width: 20%;
+    margin-left: -2%;
+  } 
+
+
+/* ///// */
+#head-div{
+text-align: center;
+}
+
+.heading{
+    font-size: 250%;
+    font-weight:900;
+    color: rgba(0, 0, 0, 0.778);
+  justify-content: center;
+
+}
+.heading-2{
+    color: rgba(0, 0, 0, 0.778);
+    font-size: 6vh;
+    font-weight:800;
+}
+
+.input-div{
+    display: flex;
+    justify-content: center;
+    padding:  0% 10%;
+}
+#search{
+    width: 60%;
+    height: 60px;
+    border-radius: 40px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-left: 2%;
+    margin-top: 40px;
+}
+
+
+
+#mid-help{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 25px;
+     padding: 0% 15%;
+     gap: 10%;
+    margin-bottom: 80px;
+    
+}
+.mid-in{
+    display: flex;
+   
+   
+    
+    
+    
+}
+#mid-help img{
+    width: 80px;
+    height: 80px;
+}
+.mid-in p{
+margin-top: 40px;
+margin-left: 20px;
+font-size: 2.8vh;
+color:rgb(47, 94, 235);
+}
+.mid-in img{
+    margin-left: 20px;
+}
+
+#top3{
+
+  
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+ margin-top: 40px;
+ padding: 0% 10%;
+ gap:5%;
+margin-bottom: 100px;
+
+}
+.myborder1{
+ border: 0.5px solid blue;
+ width: 100%;
+ text-align: center;
+ padding:5%;   
+ 
+border-radius: 10px;
+
+
+}
+.myborder{
+text-align: center;
+padding:5% 5%;   
+border: 0.5px solid rgb(229, 226, 226);
+border-radius: 10px;
+width: 100%;
+
+}
+.myborder:hover,.myborder1:hover{
+    box-shadow: 0px 1px 14px 4px rgba(17, 17, 26, 0.18);
+
+}
+
+.myborder img,.myborder1 img{
+
+ width: 100px;
+ height: 100px;
+}
+
+
+.myborder h4,.myborder1 h4{
+   font-weight: 900;
+   font-size: 90%;
+}
+
+
+
+
+@media only screen and (max-width: 700px){
+    
+#mid-help{
+    grid-template-columns: repeat(1,1fr);
+    gap: 1%;
+}
+
+#top3{
+    grid-template-columns: repeat(1,1fr);
+    padding-bottom: 300px;
+}
+.myborder,.myborder1{
+    display: flex;
+}
+.myborder> p,.myborder1 >p{
+    display: none;
+}
+.myborder> h4,.myborder1 >h4{
+   margin-top:12%;
+   margin-left: 5%;
+}
+
+
+#search{
+    width: 80%;
+}
+
+
+
+
+}
