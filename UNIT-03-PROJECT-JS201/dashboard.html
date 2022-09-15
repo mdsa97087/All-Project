@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard-Calendly</title>
+    <link rel="stylesheet" href="tasknavbar.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div id="navbar">
+        <img src="https://assets.calendly.com/packs/frontend/media/logo-square-cd364a3c33976d32792a.png" alt="">
+        <div id="options">
+            <a class="a" href="dashboard.html">Home</a>
+            <a class="a"href="#">Availibilty</a>
+            <a class="a"href="#">Integrations</a>
+            <a class="a"href="help.html">Help</a>
+            <a class="a"id="logout-dash"href="index.html">Logout</a>
+        </div>
+    </div>
+
+    <div id="secondnavbar-dash">
+        <p>My calendly <span></span></p>
+        <button  onclick="taskpage()" id="create-btn">+Create</button>
+        
+    </div>
+    <div id="headings">
+        <p>Event Types</p>
+        <p>Scheduled Events</p>
+        <p>Workflows</p>
+        <p>Routing Forms</p>
+    </div>
+    <section id="A">
+        
+        <input name="" placeholder="Filter" autocomplete="off" oninput="filterEvents()"  id="filter">
+    </section>
+
+
+<section id="B">
+    <div>
+        <img src="https://img.icons8.com/fluency/344/link.png" alt="">
+        <div id="url">
+            <P id="Name"></P>
+            <p>calendly.com/ <span  id="username"></span></p>
+        </div>
+        </div>
+    <div id="B1">
+        <button id="new-event-btn" onclick="taskpage()">+ New Event Type</button>
+    <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/344/external-setting-essentials-pack-tanah-basah-glyph-tanah-basah.png" alt="">
+    </div>
+</section>
+
+
+<section id="main">
+</section>
+    
+</body>
+
+</html>
+
+<script src="dashboard.js"></script>
