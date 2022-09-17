@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@faker-js/faker": "^7.5.0",
+    "faker": "^6.6.6",
+    "react-icons": "^4.4.0",
+    "react-router-dom": "^6.4.0"
+  }
+}
