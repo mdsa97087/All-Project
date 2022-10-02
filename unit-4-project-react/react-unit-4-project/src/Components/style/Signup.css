@@ -1,0 +1,42 @@
+.buller {
+  background-color: #e7f6f2;
+}
+.bigdiv {
+  /* padding: 50px; */
+  /* border: 1px solid rebeccapurple; */
+  width: 500px;
+  margin: auto;
+  top: 50px;
+  height: 700px;
+  /* padding: 40px; */
+  color: white;
+  background-color: burlywood;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.imgdiv {
+  padding: 20px;
+  width: 500px;
+  /* border: 2px solid red; */
+  margin: auto;
+  text-align: center;
+  background-color: rgb(226, 229, 231);
+}
+.textdiv {
+  /* border: 2px solid blue; */
+  top: 10px;
+  padding: 50px;
+  line-height: 50px;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(1, 1fr);
+}
+.downdiv {
+  /* border: 1px solid red; */
+  position: relative;
+  bottom: -30px;
+  height: 50px;
+  text-align: center;
+  padding: 12px;
+
+  background-color: #003865;
+}

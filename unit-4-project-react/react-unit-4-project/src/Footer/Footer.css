@@ -1,0 +1,26 @@
+*{
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+}
+
+thead{
+      gap: 100px;
+     
+}
+tbody{
+      column-gap: 100px;
+      row-gap: 5px;
+      
+}
+
+th{
+      font-size: 15px;
+      font-weight: 800;
+      row-gap: 5px;
+}
+
+.linking{
+      text-decoration: none;
+      color: black;
+}    

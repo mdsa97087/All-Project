@@ -1,0 +1,128 @@
+* {
+      padding: 0;
+      margin: 0;
+      font-family: HaasText,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+     
+}
+.navbardivfix{
+      /* border: 1px solid red; */
+      height: 80px;
+      z-index: 9999;
+      /* overflow: hidden; */
+}
+
+
+.spanarrow {
+      color: blue; 
+      font-size: 20px;
+}
+
+.topdiv {
+      width: 100%;
+      margin-top: 50px;
+      /* border: 1px solid red; */
+      background-color: rgb(240, 244, 242);
+      /* overflow: hidden; */
+}
+.topdivflex{
+      width: 1200px;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      margin: auto;
+}
+.fisrtdivh1{
+      margin-top: 80px;
+      /* border: 1px solid palevioletred; */
+      padding: 40px;
+      width: 500px;
+}
+.btnsignup{
+      padding: 10px;
+      border: none;
+      background-color: rgba(37, 37, 240, 0.878);
+      color: aliceblue;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 25px;
+      margin-top: 25px;
+
+}
+.videodiv{
+      /* border: 1px solid black; */
+      height: 420px;
+      margin-top: 200px;
+}
+.imglogo{
+      width: 80px;
+      height: 40px;
+      margin-top: 40px;
+}
+
+
+@media only screen and (max-width: 1000px){
+      .navbardivfix{
+            /* border: 5px solid blue; */
+            /* width: 1200px; */
+            margin: auto;
+            /* height: 10rem; */
+        
+      }
+
+      .topdiv {
+            /* border: 1px solid red; */
+            width: 1200px;
+            /* height: 1600px; */
+            top: 150px;
+            background-color: rgb(240, 244, 242);
+            margin: auto;
+            text-align: center;
+            flex-wrap: wrap;
+           
+      }
+      .topdivflex{
+            /* border: 1px solid green; */
+            position: relative;
+            width: auto;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            margin: auto;
+            flex-wrap: wrap;
+      }
+      .fisrtdivh1{
+            /* margin-top: 80px; */
+            /* border: 1px solid black; */
+            height: auto;
+            padding: 40px;
+            width: auto;
+            margin: auto;
+            text-align: center;
+      }
+      .videodiv{
+            /* border: 1px solid black; */
+            width: 1100px;
+            height: 620px;
+            margin: auto;
+            /* margin-top: 200px; */
+      }
+      .imglogo{
+            width: 80px;
+            height: 40px;
+            margin-top: 200px;
+      }
+       .createName{
+            /* border: 1px solid red; */
+            width: 1200px;
+           top: 150px;
+           margin: auto;
+           text-align: center;
+       }
+      .video{
+            padding: 0%;
+            margin: 0%;
+            width: 1000px;
+            height: 600px ;
+      }
+
+
+}
