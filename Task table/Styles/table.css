@@ -1,0 +1,10 @@
+/* Write all the code related to the table here  */
+
+table{
+    width: 80%;
+    margin:auto;
+    text-align:center
+}
+th{
+    background-color: yellowgreen;
+}

@@ -1,0 +1,23 @@
+ /* Write css related to the Home page here  */
+
+#navbar>div{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin:auto;
+} 
+h2{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+
+#create>form{
+    width: 40%;
+    display: grid;
+    margin:auto;
+    grid-template-rows: repeat(6,1fr);
+    margin-top: 20px;
+    gap: 15px;
+}
