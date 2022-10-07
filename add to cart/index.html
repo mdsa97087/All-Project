@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+              <style>
+                       #products{
+          border: 0px solid red;
+          height: 300px;
+          width: 60%;
+          margin: auto;
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 10px;
+        }
+            #navbar{
+              border: 0px solid red;
+          height: 100px;
+          width: 60%;
+          margin: auto;
+            }
+            h2{
+              text-align: center;
+            }
+            #navbar>a{
+              margin-top:15px ;
+              margin-left: 15px;
+            }
+
+              </style>
+  <body>
+    <div id="navbar">
+      <!--Create Show Products button here, give id as "show_products". avoid making spelling mistakes in HTML id's-->
+      <a href="inventory.html"><button id="show_products">showproducts</button></a>
+    </div>
+    <div>
+      <h2>Add Products</h2>
+
+      <!--Create a form here to accept product data from user, give form HTML id as "products"-->
+
+      <!--Create four inputs to accept Type, Description, price, & image-->
+      <!--give the inputs following respective id's, "type", "desc", "price","image"-->
+      <!--create a "Add Product" button to submit form, give it html id as "add_product"-->
+<form action="" id="products" onsubmit="detaArray(event)">
+  <input type="text" id="type" placeholder="Type">
+  <input type="text" id="desc" placeholder="Description">
+  <input type="text" id="price" placeholder="Price">
+  <input type="text" id="image" placeholder="Image">
+  <input type="submit" id="submit" >
+
+
+
+
+
+
+</form>
+
+      </form>
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>
