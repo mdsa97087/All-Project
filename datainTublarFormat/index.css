@@ -1,0 +1,31 @@
+/* Write all the necessery css  */
+
+#create{
+    border: 0px solid rebeccapurple;
+    width: 40%;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: auto;
+  
+    
+}
+h1{
+    text-align: center;
+}
+form{
+    margin-left: 20px;
+    
+    
+}
+th{
+
+    border: 0px solid red;
+    background-color: yellowgreen;
+}
+tbody{
+    gap: 20px;
+}
+table{
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
