@@ -1,0 +1,12 @@
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+
+#user-form{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 50px auto;
+}
